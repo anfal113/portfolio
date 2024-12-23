@@ -74,7 +74,7 @@
     cursor: pointer;
 }
 
-@media (max-width: 448px) {
+@media (max-width: 576px) {
     .nav {
         display: none;  /* Hide the nav bar by default on small screens */
     }
