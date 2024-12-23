@@ -1,0 +1,202 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container-fluid{
+    max-width: auto;
+    height: 570px;
+     display: flex;
+    align-items: end;
+    background-color: #f877;
+    padding: 25px;
+    background-image: url("/image/anfalbck.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    position: relative;
+    
+
+}
+.container-item-1, .container-item-2, .container-item-3{
+    color:white;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+
+}
+.image{
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+}
+
+.icon {
+    display: flex;
+    /* margin-bottom: 500px;
+    gap: 10px;
+    margin-left: 40px; */
+    position: absolute;
+    top: 35px;
+    left: 45px;
+    gap: 20px;
+
+
+}
+/* .icon-1 :hover{
+    box-shadow: 0 2px 4px rgba(0, 0, 2, 0.3);
+    border-radius: 60px;
+} */
+
+
+.indro{
+    display:flex;
+    flex-direction: column;
+}
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    gap: 30px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    background-color: rgb(255, 255, 255);
+}
+.menu-toggle {
+    display: none;  /* Hide the menu toggle button by default */
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+}
+
+@media (max-width: 448px) {
+    .nav {
+        display: none;  /* Hide the nav bar by default on small screens */
+    }
+
+    .menu-toggle {
+        display: block;  /* Show the menu toggle button */
+        position: fixed;
+        top: 10px;
+        right: 10px;
+
+    }
+
+    .nav.show {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 50px;
+        right: 10px;
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+.grid-container, .grid-1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.About-3, .personal-4, .expert-5{
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* h5 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+p, li {
+    color: #555;
+    line-height: 1.6;
+} */
+
+/* ul {
+    list-style-type: none;
+    padding: 0;
+} */
+
+/* ul li {
+    margin-bottom: 8px;
+} */
+
+.resume-6{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+}
+.resume{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    transition: 1s;
+
+
+}
+
+.resume-flex-1{
+    /* min-height: 300px; */
+    max-width: 400px;
+    /* display: flex; */
+}
+
+/* .resume-grid-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+/* .skill-flex-3{
+    /* display: flex; */
+    /* align-items: flex-start; */
+
+
+.expert-5:hover,.personal-4:hover,.About-3:hover{
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgb(248,100,119);
+
+}
+.skill-flex-3{
+    transition: 1s;
+
+}
+
+
+.skill-flex-3:hover,.resume:hover{
+    color: rgb(248,100,119);
+    /* background-color: rgb(248,100,119); */
+  /* width: ;
+    height: ;   */
+
+}
+.container-item-1:hover,
+.container-item-2:hover,
+.container-item-3:hover{
+     color: rgb(248,100,119);
+}
+.container-item-1,
+.container-item-2,
+.container-item-3{
+    transition: 1s;
+}
