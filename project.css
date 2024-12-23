@@ -9,7 +9,7 @@
     align-items: end;
     background-color: #f877;
     padding: 25px;
-    background-image: url("/image/anfalbck.jpeg");
+    background-image: url("./image/anfalbck.jpeg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
